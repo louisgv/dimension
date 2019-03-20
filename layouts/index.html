@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
     {{ partial "header.html" . }}
-    <body>
+    <body class="is-loading">
 
     <!-- Wrapper -->
       <div id="wrapper">
@@ -66,5 +66,13 @@
           {{ end }}
           </ul>
     {{ partial "footer.html" . }}
+
+    <div id="loader-container">
+      <svg id="loader" width="100px" height="100px" viewBox="-3 -4 39 39">
+        <polygon fill="#000" stroke="#EFEFEF" stroke-width="1" points="16,0 0,16 8,24 8,16"></polygon>
+        <polygon fill="#000" stroke="#EFEFEF" stroke-width="1" points="16,32 32,16 24,8 24,16"></polygon>
+      </svg>
+    </div>
+  
 </body>
 </html>
